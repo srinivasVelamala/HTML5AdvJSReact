@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recursion Example</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script type="text/javascript" language="javascript">
+        function numberGenerator() {
+   // Local “free” variable that ends up within the closure
+   var num = 1;
+   function checkNumber() {
+    alert(num);
+   }
+   num++;
+   return checkNumber;
+ }
+
+ var number = numberGenerator();
+ number(); // 2
+    </script>
+</head>
+<body>
+<button id="login" type="button" onclick="numberGenerator()">Number Generator</button>
+</body>
+</html>

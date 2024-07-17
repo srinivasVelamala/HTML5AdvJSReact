@@ -1,0 +1,6 @@
+contactslist.html
+addupdatecontact.html
+delete.html
+
+id,firstname,lastname, mobile, emailid, city.
+

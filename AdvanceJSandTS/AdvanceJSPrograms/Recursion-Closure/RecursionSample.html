@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recursion Example</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script type="text/javascript" language="javascript">
+        function power(x,n) {
+            alert( pow(x, n) );
+        }
+        function pow(x, n) {
+           if (n == 1) {
+             return x;
+           } else {
+             return x * pow(x, n - 1);
+           }
+         }
+    </script>
+</head>
+<body>
+<button id="login" type="button" onclick="power(2,4)">Calculate Power</button>
+</body>
+</html>

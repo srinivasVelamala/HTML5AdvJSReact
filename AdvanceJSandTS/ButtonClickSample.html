@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+
+UserName: <input type="text" id="txtLogin" value=""> <br/>
+Password: <input type="text" id="txtPwd" value=""><br/>
+
+<button onclick="myFunction()">Click me</button> <br/>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+
+      var uname = document.getElementById("txtLogin").value;
+      var pwd = document.getElementById("txtPwd").value;
+     console.log(uname);
+     if(uname == 'admin' && pwd =='admin')
+     {
+      document.getElementById("demo").innerHTML = "Successfully Login..";
+      }
+      else
+      {
+       document.getElementById("demo").innerHTML = "Invalid password...";
+
+      }
+    }
+</script>
+
+</body>
+</html>
