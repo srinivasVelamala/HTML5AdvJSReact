@@ -6,11 +6,29 @@
 UserName: <input type="text" id="txtLogin" value=""> <br/>
 Password: <input type="text" id="txtPwd" value=""><br/>
 
+
+<input type="text" id="txtoutput" value=""><br/>
+
+<input type="button" id="btn1" value="1"> <br/>
+<input type="button" id="btn2" value="2"><br/>
+<input type="button" id="btnplus" value="+"><br/>
+<input type="button" id="btnequal" onclick="clickedEqualBtn()"  value="="><br/>
+
 <button onclick="myFunction()">Click me</button> <br/>
 
 <p id="demo"></p>
 
 <script>
+  
+  function clickedEqualBtn(){
+  //arithematic operation
+  
+  let result ="234";
+    document.getElementById("txtoutput").value = result ;
+
+
+
+  }
     function myFunction() {
 
       var uname = document.getElementById("txtLogin").value;
