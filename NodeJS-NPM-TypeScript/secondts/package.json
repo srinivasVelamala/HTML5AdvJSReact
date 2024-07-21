@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start-dev": "node lib/server-development",
+    "start": "node lib/server-production"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}
