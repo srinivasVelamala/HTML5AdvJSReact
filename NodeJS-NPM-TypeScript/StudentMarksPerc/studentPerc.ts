@@ -23,9 +23,6 @@ type Student = {
     sub2: 88,
     sub3:98
   };
-//   const isJustineAnAdult: string = isAdult(justine, "I shouldn't be here!");
-  
-//   const username: string = getUserName(justine);
  console.log('Student1 Details----');
   console.log('Student Name- ' + nick.name);
   console.log('Student total Marks-' + getTotalMarks(nick));
