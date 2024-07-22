@@ -17,6 +17,18 @@ var nick = {
 };
 //   const isJustineAnAdult: string = isAdult(justine, "I shouldn't be here!");
 //   const username: string = getUserName(justine);
+console.log('Student1 Details----');
 console.log('Student Name- ' + nick.name);
 console.log('Student total Marks-' + getTotalMarks(nick));
-console.log('Student Percentage - ' + getPercentage(nick));
+console.log('Student Percentage-' + getPercentage(nick).toFixed(2) + '%');
+var Lana = {
+    name: 'Marry Lana',
+    sub1: 60,
+    sub2: 81,
+    sub3: 91
+};
+console.log('*****************************************************');
+console.log('Student2 Details----');
+console.log('Student Name- ' + Lana.name);
+console.log('Student total Marks-' + getTotalMarks(Lana));
+console.log('Student Percentage-' + getPercentage(Lana).toFixed(2) + '%');
