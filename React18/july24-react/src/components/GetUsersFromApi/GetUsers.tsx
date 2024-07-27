@@ -19,7 +19,8 @@ export const GetUsers = () => {
         const fetchUsers = async () => {
         // get -> promise -> res / err
           try{
-            const res = await axios.get<User[]>('https://jsonplaceholder.typicode.com/users')
+            //const res = await axios.get<User[]>('https://jsonplaceholder.typicode.com/users')
+            const res = await axios.get<User[]>('http://localhost:3001/getUsers')
             console.log(res.data);
             setUsers(res.data);
           }
